@@ -5,13 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline | Home</title>
     <!-- website logo -->
-     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+     <link rel="shortcut icon" href="./assets/logo2.png" type="image/x-icon">
      <!-- tailwind cdn -->
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <!-- dAisyUI CDN -->
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
       <!-- font awesome cdn -->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1 class="text-green-500 text-center text-4xl">assignment 5 Emergency Hotline</h1>
+    <header class="py-4 flex justify-between max-w-[1200px] mx-auto">
+        <div class="flex items-center gap-3">
+            <img src="./assets/logo2.png" class="h-16 w-16" alt="">
+            <h1 class="text-xl font-bold text-[#006747]">Emergency<br>Service</h1>
+        </div>
+        <div class="flex items-center gap-7">
+            <div class="md:flex items-center gap-2 bg-[#41ff6b1a] px-4 py-1 rounded-[50px] hidden">
+                <span class="font-bold">0</span>
+                <img src="./assets/heart.png" class="h-6 w-6" alt="">
+            </div>
+            <div class="flex items-center gap-2 bg-[#41ff6b1a] px-2 py-1  rounded-[50px] ">
+                <span class="font-bold">100</span>
+                <img src="./assets/coin.png" class="h-6 w-6" alt="">
+            </div>
+            <button class="bg-[#00a63e] text-white px-4 py-2  rounded-[50px] sm:flex hidden"><span>0</span> Copy</button>
+        </div>
+    </header>
 </body>
 </html>
