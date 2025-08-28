@@ -12,16 +12,18 @@ for (let singleCard of cards) {
   });
 
   // call btn click
-  const serviceName = singleCard.querySelector(".service-name").innerText;
+  
+
+  callBtn.addEventListener("click", function () {
+    const serviceName = singleCard.querySelector(".service-name").innerText;
   const serviceNumber = singleCard.querySelector(".service-number").innerText;
   const setAlert = `📞Calling-${serviceName}-${serviceNumber}`;
 
   const historyContainer = document.getElementById("history-container");
   const newDiv = document.createElement("div");
 
-  console.log();
-  // console.log(callBtn)
-  callBtn.addEventListener("click", function () {
+
+
     let coinImg = document.getElementById("coin-img");
     let currentCoin = parseInt(coinImg.innerText);
 
