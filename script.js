@@ -3,6 +3,7 @@ const cards = document.getElementsByClassName("card");
 for (let singleCard of cards) {
   const cardsHeart = singleCard.querySelector(".card-heart");
   const callBtn = singleCard.querySelector(".call-btn");
+  const copyBtn = singleCard.querySelector(".copy-btn")
 
   // heart count
   cardsHeart.addEventListener("click", function () {
@@ -21,6 +22,7 @@ for (let singleCard of cards) {
 
   const historyContainer = document.getElementById("history-container");
   const newDiv = document.createElement("div");
+  
 
 
 
@@ -51,7 +53,28 @@ for (let singleCard of cards) {
 
    
   });
+
+  // copy-btn
+    
+  copyBtn.addEventListener('click',function(){
+      const copyCount = document.getElementById('copy-count')
+      const serviceNumber = singleCard.querySelector(".service-number").innerText;
+      let copyCountNumber = parseInt(copyCount.innerText)
+      copyCountNumber++
+      copyCount.innerText = copyCountNumber
+      navigator.clipboard.writeText(serviceNumber)
+      const copyAlert = `This number has been copied - ${serviceNumber}`
+      alert(copyAlert)
+  })
+
+  
 }
+
+document.getElementById('clear-btn').addEventListener('click',function(){
+  const historyContainer = document.getElementById("history-container");
+  historyContainer.innerHTML = ""
+})
+
 
 // const cards = document.getElementsByClassName("card");
 
