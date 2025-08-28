@@ -40,14 +40,13 @@
         <div
           class="flex items-center gap-2 bg-[#41ff6b1a] px-2 py-1 rounded-[50px]"
         >
-          <span class="font-bold">100</span>
+          <span id="coin-img" class="font-bold">100</span>
           <img src="./assets/coin.png" class="h-6 w-6" alt="" />
         </div>
-        <button
-          class="bg-[#00a63e] text-white px-4 py-2 rounded-[50px] sm:flex hidden"
-        >
-          <span>0</span> Copy
-        </button>
+        <div class="bg-[#00a63e] text-white md:flex items-center gap-2 px-4 py-2 rounded-[50px] hidden">
+          <span id="heart-img" class="font-bold">0</span>
+          <p>Copy</p>
+        </div>
       </div>
     </header>
     <main>
@@ -369,7 +368,7 @@
           </section>
           <!-- right site item -->
           <aside class="bg-white p-4 order-0 md:order-1 rounded-lg col-span-1">
-            <div>
+            <div id="history-container">
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-2">
                   <span><i class="fa-regular fa-clock"></i></span>
@@ -377,6 +376,7 @@
                 </div>
                 <button class="bg-[#00a63e] rounded-3xl px-6 py-1 text-white">Clear</button>
               </div>
+              
             </div>
           </aside>
         </section>
